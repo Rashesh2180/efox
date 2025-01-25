@@ -62,9 +62,7 @@ const accordionData = [
 const Faq = () => {
   const [open, setOpen] = useState(null);
 
-  const handleToggle = (ind) => {
-    setOpen(open === ind ? null : ind);
-  };
+ 
   return (
     <section className="inside_container sm:py-44 max-md:!px-7 pt-16 sm:pb-32 pb-24">
       <div className="flex max-lg:flex-col max-lg:gap-4 justify-between">
