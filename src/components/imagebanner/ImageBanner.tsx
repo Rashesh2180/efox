@@ -3,15 +3,15 @@ import React from "react";
 
 const ImageBanner = () => {
   return (
-    <section className="md:pt-32 pt-16 pb-20 lg:pb-44 inside_container">
+    <section className="md:pt-32 pt-16 pb-20 lg:pb-44 inside_container max-sm:!px-7">
       <div className="max-w-4xl mx-auto flex flex-col justify-center items-center pb-20 sm:pb-40">
-        <span className="border-2 mb-4 border-bordercolor px-7 rounded-full py-1.5 text-center text-2xl leading-9 font-bold text-primary">
+        <span className="border-2 mb-4 border-bordercolor sm:px-7 px-6 rounded-full py-1.5 text-center sm:text-2xl text-lg leading-9 font-bold text-primary">
           Good news!
         </span>
         <h2 className="text-2xl leading-[2.8rem] max-lg:text-center">
           Grab your data plan anytime. It starts the moment you land.
         </h2>
-        <h3 className="text-2xl leading-[2.8rem] font-bold mb-12">
+        <h3 className="text-2xl leading-[2.8rem] font-bold mb-12 max-lg:text-center">
           Stress-free travel, instant connection!
         </h3>
         <button className="custom-button bg-primary !text-white">See All Countries</button>

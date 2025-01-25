@@ -66,7 +66,7 @@ const Faq = () => {
     setOpen(open === ind ? null : ind);
   };
   return (
-    <section className="inside_container sm:py-44 pt-16 sm:pb-32 pb-24">
+    <section className="inside_container sm:py-44 max-md:!px-7 pt-16 sm:pb-32 pb-24">
       <div className="flex max-lg:flex-col max-lg:gap-4 justify-between">
         <div className="lg:max-w-[29.5rem] max-lg:text-center">
           <h2 className="section-heading max-sm:text-center">FAQ</h2>
@@ -127,7 +127,7 @@ const Faq = () => {
               <div
                 key={ele.id}
                 className={`shadow-custom-shadow hover:border-primary hover:shadow-hover-shadow pl-8 pr-5 rounded-xl border-2 border-bordercolor ${
-                  open === ind ? "py-8" : "py-5 "
+                  open === ind ? "sm:py-8 py-6" : "py-5 "
                 }`}
               >
                 <button
@@ -136,11 +136,11 @@ const Faq = () => {
                     open === ind ? "mb-5" : "mb-0"
                   } flex justify-between items-center  w-full gap-3`}
                 >
-                  <p className="text-fs22 font-semibold leading-8 capitalize tracking-letterspace2 text-start">
+                  <p className="sm:text-fs22 text-lg font-semibold leading-8 capitalize tracking-letterspace2 text-start">
                     {ele.title}
                   </p>
                   {open !== ind ? (
-                    <button className="bg-bordercolor h-9 w-9 rounded-full flex justify-center items-center">
+                    <button className="bg-bordercolor shrink-0 h-9 w-9 rounded-full flex justify-center items-center">
                       <Image
                         src={"/svg/rightangleArrow.svg"}
                         alt="accordion_close"
@@ -150,7 +150,7 @@ const Faq = () => {
                       />
                     </button>
                   ) : (
-                    <button className="bg-primary h-9 w-9 rounded-full flex justify-center items-center">
+                    <button className="bg-primary h-9 w-9 shrink-0 rounded-full flex justify-center items-center">
                       <Image
                         src={"/svg/ccordionopen.svg"}
                         alt="accordion_close"
@@ -173,7 +173,7 @@ const Faq = () => {
           <p className="text-2xl leading-9 font-semibold mb-5">
             Still need help?
           </p>
-          <div className=" flex justify-between mb-6 w-full max-w-[31.25rem] mx-auto">
+          <div className=" flex justify-between mb-6 w-full sm:max-w-[31.25rem] max-w-[25.25rem] mx-auto">
             <div className="flex flex-col justify-center items-center text-center">
               <span className="h-10 w-10 rounded-full mb-3.5 bg-secondary2 flex justify-center items-center">
                 <Image
@@ -218,7 +218,7 @@ const Faq = () => {
           </button>
         </div>
       </div>
-      <div className="pt-32">
+      <div className="sm:pt-32 mt-20">
         <h3 className="section-heading text-center mb-10">Trusted By</h3>
         <div className="grid md:grid-cols-5 grid-cols-3 xl:gap-y-20 md:gap-y-10 gap-y-12 xl:gap-x-24 gap-x-16 place-items-center">
           {[

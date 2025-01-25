@@ -32,14 +32,14 @@ const workdata = [
 ];
 const WorkInfo = () => {
   return (
-    <div className="inside_container sm:pt-44 pt-16 max-md:px-4">
+    <div className="inside_container sm:pt-44 pt-16 max-md:!px-7 ">
       <h2 className="section-heading text-center">How does eSIM from</h2>
-      <h3 className="section-title  text-center mb-7">eSIM Fox work?</h3>
+      <h3 className="section-title  text-center sm:mb-7 mb-6">eSIM Fox work?</h3>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-14 sm:gap-8 xl:gap-16">
         {workdata &&
           workdata.map((ele, ind) => (
             <div key={ind} className={``}>
-              <div className="md:h-[27.18rem] h-96 max-w-[16.93rem] relative  mx-auto">
+              <div className="md:h-[27.18rem] h-[27.27rem] max-w-[16.93rem] relative  mx-auto">
                 <Image
                   src={ele.img}
                   alt=""

@@ -26,17 +26,17 @@ const Footer = () => {
   return (
     <footer className="bg-black">
       <div className="inside_container max-lg:gap-12 max-lg:flex-col flex justify-between w-full lg:border-b max-lg:px-7 border-neutral2 lg:pt-24 pt-14 lg:pb-[5.5rem]">
-        <div className="mx-auto">
-          <Link href="#" className="h-16 mb-8 block">
+        <div className="mx-auto max-sm:flex justify-center items-center flex-col">
+          <Link href="#" className="sm:h-16 h-20 mb-8 block">
             <Image
               src={"/svg/footerlogo.svg"}
-              className="h-full w-full lg:max-w-56"
+              className="h-full w-full lg:max-w-56 max-sm:w-64"
               width="0"
               height="0"
               alt="logo"
             />
           </Link>
-          <button className="custom-button bg-primary !text-white mb-7">
+          <button className="custom-button bg-primary !text-white mb-7 mx-auto">
             Get My eSIM
           </button>
           <div className="flex gap-2.5 items-center">
@@ -219,12 +219,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="py-12 flex items-center justify-center gap-1 text-center text-neutral2 leading-9 tracking-letterspace2 text-lg px-5">
-        Made with{" "}
-        <span>
-          <Image src={"/svg/heart.svg"} width={20} height={18} alt="heart" />
-        </span>{" "}
-        by people who love to travel. eSIM Fox 2024 ®
+      <div className="py-12 flex justify-center items-center max-sm:flex-col gap-1 text-center text-neutral2 leading-9 tracking-letterspace2 text-lg px-5">
+        
+        <span>Made with by people who </span>
+      love to travel. eSIM Fox 2024 ®
       </div>
     </footer>
   );

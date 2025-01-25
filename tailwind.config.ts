@@ -18,7 +18,8 @@ export default {
       bordercolor:'#0E0E1026',
       neutral:"#3C3D44",
       neutral2:"#636363",
-      neutral3:"#1A1A1A"
+      neutral3:"#1A1A1A",
+      accent:"#F5F5F5"
       },
       letterSpacing:{
         letterspace:"3%",

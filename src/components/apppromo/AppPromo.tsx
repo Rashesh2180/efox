@@ -22,7 +22,7 @@ const AppPromo = () => {
             Download the App and easily add, manage, and extend your data plans
             for multiple destinations-all from one eSIM.
           </p>
-          <div className="text-sm text-neutral2 text-center flex max-lg:justify-center items-center leading-6  gap-4">
+          <div className="text-sm text-neutral2 text-center flex max-lg:justify-center items-center leading-6 max-sm:mb-5 gap-4">
             <span>Downlaod by</span>
             <div className="flex gap-2 items-center">
               <Link

@@ -59,14 +59,14 @@ const countrtriesData = [
 ];
 const DestinationSelector = () => {
   return (
-    <section className="inside_container sm:pt-44 pt-16 max-sm:px-4">
+    <section className="inside_container sm:pt-44 pt-16 max-sm:px-7">
       <h2 className="section-heading max-md:text-center">One eSIM for all</h2>
       <div className="flex items-center justify-between flex-wrap mb-6 sm:mb-8">
         <h3 className="section-title max-xl:mb-3.5 max-md:w-full text-center">
           Your Destinations
         </h3>
         <div className="flex gap-4 xl:gap-2 items-center flex-wrap md:ml-auto">
-          <div className="border border-bordercolor p-5 rounded-full max-md:w-full flex items-center gap-0.5">
+          <div className="border border-bordercolor sm:p-5 p-3.5 rounded-full max-md:w-full flex items-center gap-0.5">
             <Image
               src={"/svg/search.svg"}
               alt="search_icon"
@@ -83,7 +83,7 @@ const DestinationSelector = () => {
             {["Countries", "Regions", "Global"].map((ele, ind) => (
               <button
                 key={ind}
-                className="sm:text-xl text-lg font-bold leading-7 -tracking-normal text-neutral2 py-2.5 px-4   sm:px-6 hover:bg-black hover:text-white rounded-full"
+                className="sm:text-xl text-lg font-bold leading-7 -tracking-normal text-neutral2 py-2.5 px-7 sm:px-6 hover:bg-black hover:text-white rounded-full"
               >
                 {ele}
               </button>
@@ -113,10 +113,10 @@ const DestinationSelector = () => {
                   </h3>
                 </div>
                 <div className="flex justify-between items-center pt-5">
-                  <p className="text-xl left-7">
-                    Starting at <span className="font-bold">${ele.price}</span>
+                  <p className="text-xl left-7 text-neutral2">
+                    Starting at <span className="font-bold text-black">${ele.price}</span>
                   </p>
-                  <button className="h-8 w-8 rounded-full bg-primary flex items-center justify-center">
+                  <button className="h-8 w-8 rounded-full bg-accent flex items-center justify-center">
                     <Image
                       src={"/svg/rightangleArrow.svg"}
                       width={14}

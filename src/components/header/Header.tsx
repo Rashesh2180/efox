@@ -21,8 +21,8 @@ const Header = () => {
   const handlemenuCLose = () => setMenuOpen(false);
   return (
    <header className="bg-white z-10 sticky">
-     <div className="flex justify-between items-center top-0 max-w-[101.9rem] mx-auto px-4 sm:px-4 pb-2 pt-6">
-      <Link href="#" className="h-16 max-w-56">
+     <div className="flex justify-between items-center top-0 max-w-[101.9rem] mx-auto px-7 sm:px-4 pb-2 sm:pt-6 pt-5">
+      <Link href="#" className="sm:h-16 h-[3.25rem] sm:max-w-56 max-sm:w-44">
         <Image
           src={"/svg/logo/efox_logo.svg"}
           className="h-full w-full "
@@ -48,17 +48,17 @@ const Header = () => {
           ))}
         </div>
         <div className="flex items-center gap-2.5">
-          <button className="text-xl flex gap-1.5 text-center items-center min-w-20 sm:min-w-28 font-semibold border border-bordercolor rounded-full p-4 outline-none">
+          <button className="text-xl flex gap-1.5 text-center items-center min-w-20 sm:min-w-28 font-semibold border border-bordercolor rounded-full sm:p-4 p-2.5 outline-none">
             <Image
               src={"/svg/flag.svg"}
               height={32}
               width={32}
-              className="h-8 w-8"
+              className="sm:h-8 sm:w-8 h-6 w-6"
               alt="flag_logo"
             />
 
             <div className="flex gap-1 items-center">
-              <span> EN</span>
+              <span className="text-sm font-bold"> EN</span>
               <Image
                 src={"/svg/downchevron.svg"}
                 height={12}
